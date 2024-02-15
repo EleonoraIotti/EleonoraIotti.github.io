@@ -1,0 +1,98 @@
+
+/** Theme **/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    margin: 30px auto;
+}
+
+.a4paper {
+    max-width: 1123px !important;
+    max-height: 1587px !important;
+}
+
+* {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.title-mono {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: bold;
+}
+
+.title-serif {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+p {
+    text-indent: 30px;
+}
+
+p.noindent {
+    text-indent: 0px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.height60 {
+    min-height: 60px;
+}
+/** --- **/
+
+/** Don't know why 'large' devices have 2px more on top **/
+@media (max-width: 1199px) {
+    .top60 {
+        top: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .top60 {
+        top: 62px;
+    }
+}
+/** --- **/
+
+/** Bootstrap automatically remove collapsed class from btn
+    after collapse element shows entirely **/
+.btn-custom-collapse.collapsed::after {
+    content: '+ show more';
+}
+
+.btn-custom-collapse:not(.collapsed)::after {
+    content: '- show less';
+}
+/** --- **/
+
+/** '+ show more' link only for text on xs devices **/
+@media (max-width: 575px) {
+    div.three-rows.collapse:not(.show) {
+        display: block;
+        height: 3rem;
+        overflow: hidden;
+    }
+
+    div.three-rows.collapsing {
+        height: 3rem;
+    }
+}
+/** --- **/
+
+/** Avatar specific **/
+.zoom-in {
+    transform: translate(-48px, 48px) scale(3);
+    transition: all .2s linear;
+}
+
+.zoom-out {
+    transform: translate(0px, 0px) scale(1);
+    transition: all .2s linear;
+}
+/** --- **/
