@@ -13,13 +13,21 @@ function zoom_out() {
 
 }
 
+function toggle_zoom() {
+
+    this.classList.toggle('zoom-out');
+    this.classList.toggle("zoom-in");
+
+}
+
 function main() {
 
     document.getElementById('avatar').addEventListener('mouseover', zoom_in);
-    document.getElementById('avatar').addEventListener('touchstart', zoom_in);
-
     document.getElementById('avatar').addEventListener('mouseout', zoom_out);
-    document.getElementById('avatar').addEventListener('touchend', zoom_out);
+    
+    document.getElementById('avatar').addEventListener('touchstart', toggle_zoom);
+    // document.getElementById('avatar').addEventListener('touchstart', zoom_in);
+    // document.getElementById('avatar').addEventListener('touchend', zoom_out);
 
 }
 
