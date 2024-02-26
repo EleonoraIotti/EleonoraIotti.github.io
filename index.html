@@ -7,114 +7,14 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
 
     <title>Eleonora Iotti</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
-    <link rel="stylesheet" type="text/css" href="main.css">
-<style>
-    
-/** Theme **/
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-    margin: 30px auto;
-}
+    <link rel="stylesheet" type="text/css" href="./main.css">
 
-.a4paper {
-    max-width: 1123px !important;
-    max-height: 1587px !important;
-}
-
-* {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.title-mono {
-    font-family: 'Courier New', Courier, monospace !important;
-    font-weight: bold;
-}
-
-.title-serif {
-    font-family: Georgia, 'Times New Roman', Times, serif !important;
-    font-weight: bold;
-}
-
-table {
-    width: 100%;
-}
-
-p {
-    text-indent: 30px;
-}
-
-p.noindent {
-    text-indent: 0px;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.height60 {
-    min-height: 60px;
-}
-/** --- **/
-
-/** Don't know why 'large' devices have 2px more on top **/
-@media (max-width: 1199px) {
-    .top60 {
-        top: 60px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .top60 {
-        top: 62px;
-    }
-}
-/** --- **/
-
-/** Bootstrap automatically remove collapsed class from btn
-    after collapse element shows entirely **/
-.btn-custom-collapse.collapsed::after {
-    content: '+ show more';
-}
-
-.btn-custom-collapse:not(.collapsed)::after {
-    content: '- show less';
-}
-/** --- **/
-
-/** '+ show more' link only for text on xs devices **/
-@media (max-width: 575px) {
-    div.three-rows.collapse:not(.show) {
-        display: block;
-        height: 3rem;
-        overflow: hidden;
-    }
-
-    div.three-rows.collapsing {
-        height: 3rem;
-    }
-}
-/** --- **/
-
-/** Avatar specific **/
-.zoom-in {
-    transform: translate(-48px, 48px) scale(3);
-    transition: all .2s linear;
-}
-
-.zoom-out {
-    transform: translate(0px, 0px) scale(1);
-    transition: all .2s linear;
-}
-/** --- **/
-
-</style>
 </head>
 
 <body class="a4paper px-1 text-secondary-emphasis">
@@ -129,7 +29,7 @@ p.noindent {
                 </td>
                 <td class="text-end">
                     <div class="float-end rounded">
-                        <img src="/img/avatar.jpg" width="48" height="48" id="avatar" class="rounded zoom-out" alt="me">
+                        <img src="./img/avatar.jpg" width="48" height="48" id="avatar" class="rounded zoom-out" alt="me">
                     </div>
                 </td>
             </tr>
@@ -644,7 +544,7 @@ p.noindent {
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

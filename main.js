@@ -22,6 +22,10 @@ function toggle_zoom() {
 
 function main() {
 
+    console.log("********************");
+    console.log("* Welcome visitor! *");
+    console.log("********************");
+
     document.getElementById('avatar').addEventListener('mouseover', zoom_in);
     document.getElementById('avatar').addEventListener('mouseout', zoom_out);
     
